@@ -46,16 +46,16 @@ set statusline+=%04l        " Current line
 set statusline+=\|          " Separator
 set statusline+=%04c        " Current column
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-" Let Vundle manage Vundle
-Bundle 'gmarik/vundle'
-
-" Vundle Bundles
-Bundle 'scrooloose/syntastic'
-Bundle 'scrooloose/nerdtree'
-Bundle 'kien/ctrlp.vim'
+" set rtp+=~/.vim/bundle/vundle/
+" call vundle#rc()
+"
+" " Let Vundle manage Vundle
+" Bundle 'gmarik/vundle'
+"
+" " Vundle Bundles
+" Bundle 'scrooloose/syntastic'
+" Bundle 'scrooloose/nerdtree'
+" Bundle 'kien/ctrlp.vim'
 
 " Automatically set the current dir to this files location
 " autocmd BufEnter * silent! lcd %:p:h
@@ -92,34 +92,34 @@ let mapleader=","
 
 " git mappings
 " Bring up visual log display of file
-nmap <silent><leader>vt :!gitk <c-r>% &<CR><CR>
+" nmap <silent><leader>vt :!gitk <c-r>% &<CR><CR>
 
 " NERDTree
-nmap <leader>n :NERDTreeToggle<CR>
-let NERDTreeHighlightCursorline=1
-let NERDTreeIgnore = ['tmp', 'pkg']
+" nmap <leader>n :NERDTreeToggle<CR>
+" let NERDTreeHighlightCursorline=1
+" let NERDTreeIgnore = ['tmp', 'pkg']
 
 " Syntastic
 "set statusline+=%#warningmsg#
 "set statusline+=%{SyntasticStatuslineFlag()}
 "set statusline+=%*
 
-let g:syntastic_always_populate_loc_list=1
-let g:syntastic_auto_loc_list=1
-let g:syntastic_check_on_open=1
-let g:syntastic_check_on_wq=0
-let g:syntastic_php_checkers=["php"]
+" let g:syntastic_always_populate_loc_list=1
+" let g:syntastic_auto_loc_list=1
+" let g:syntastic_check_on_open=1
+" let g:syntastic_check_on_wq=0
+" let g:syntastic_php_checkers=["php"]
 
 " ctrlp
-nnoremap <silent> <c-p> :CtrlP /Users/jfetherolf/repos/dcsdSoftware<cr>
-let g:ctrlp_working_path_mode=0
-let g:ctrlp_working_path_mode=''
-let g:ctrlp_by_filename=1
-let g:ctrlp_max_files=0
-let g:ctrlp_regexp=0
-let g:ctrlp_mruf_max=1000
-" let g:ctrlp_user_command = ['.git/', 'cd %s && git ls-files --exclude-standard -co']
-set wildignore+=*.class
+" nnoremap <silent> <c-p> :CtrlP /Users/jfetherolf/repos/dcsdSoftware<cr>
+" let g:ctrlp_working_path_mode=0
+" let g:ctrlp_working_path_mode=''
+" let g:ctrlp_by_filename=1
+" let g:ctrlp_max_files=0
+" let g:ctrlp_regexp=0
+" let g:ctrlp_mruf_max=1000
+" " let g:ctrlp_user_command = ['.git/', 'cd %s && git ls-files --exclude-standard -co']
+" set wildignore+=*.class
 
 
 " Custom Functions
