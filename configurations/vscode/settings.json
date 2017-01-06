@@ -1,0 +1,39 @@
+// Place your settings in this file to overwrite the default settings
+{
+  // put tab size to 4 for now
+  "editor.tabSize": 4,
+  // tell editor not to wrap
+  "editor.wrappingColumn": -1,
+  // set a ruler at 80
+  "editor.rulers": [
+    80
+  ],
+  // Remove trailing whitespace on file save
+  "files.trimTrailingWhitespace": true,
+  // keep opened files rather than preview
+  "workbench.editor.enablePreview": false,
+  // set terminal to my terminal
+  "terminal.external.osxExec": "iTerm.app",
+  // map jj to escape for vim
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<esc>"]
+    }
+  ],
+  // map ; to : and tab switch
+  "vim.otherModesKeyBindings": [
+    {
+      "before": [";"],
+      "after": [":"]
+    },
+    {
+      "before": ["]"],
+      "after": [":tabn"]
+    },
+    {
+      "before": ["["],
+      "after": [":tabp"]
+    }
+  ]
+}
