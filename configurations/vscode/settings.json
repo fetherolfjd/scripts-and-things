@@ -10,6 +10,8 @@
   ],
   // Remove trailing whitespace on file save
   "files.trimTrailingWhitespace": true,
+  // add final newline
+  "files.insertFinalNewline": true,
   // keep opened files rather than preview
   "workbench.editor.enablePreview": false,
   // set terminal to my terminal
