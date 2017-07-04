@@ -2,8 +2,10 @@
 {
   // put tab size to 4 for now
   "editor.tabSize": 4,
+  // stop getting my tab and space settings overridden
+  "editor.detectIndentation": false,
   // tell editor not to wrap
-  "editor.wrappingColumn": -1,
+  "editor.wordWrap": -1,
   // set a ruler at 80
   "editor.rulers": [
     80
@@ -16,6 +18,12 @@
   "workbench.editor.enablePreview": false,
   // set terminal to my terminal
   "terminal.external.osxExec": "iTerm.app",
+  "eslint.enable": true,
+  "eslint.options": {
+    "configFile": "/Users/jfetherolf/.eslintrc.json"
+  },
+  // output info from node security project plugin
+  "nsp.output": "default",
   // map jj to escape for vim
   "vim.insertModeKeyBindings": [
     {
@@ -37,5 +45,8 @@
       "before": ["["],
       "after": [":tabp"]
     }
-  ]
+],
+"vim.disableAnnoyingNeovimMessage": true,
+
+"editor.minimap.enabled": false
 }
